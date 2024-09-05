@@ -1,9 +1,9 @@
-class shape {
+class Shape {
     private:
         double height;
         double width;
     public:
-        shape(double inwidth, double inheight);
+        Shape(double inwidth, double inheight);
         double getWidth();
         double getHeight();
         void setDimensions(double w, double h);

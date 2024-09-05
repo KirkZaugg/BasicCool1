@@ -1,6 +1,6 @@
 #include "shape.h"
 
-shape::shape(double inWidth, double inHeight) {
+Shape::Shape(double inWidth, double inHeight) {
     if(inWidth > 0) {
         width = inWidth;
     } else {
@@ -13,15 +13,15 @@ shape::shape(double inWidth, double inHeight) {
     }
 }
 
-double shape::getWidth() {
+double Shape::getWidth() {
     return width;
 }
 
-double shape::getHeight() {
+double Shape::getHeight() {
     return height;
 }
 
-void shape::setDimensions(double w, double h) {
+void Shape::setDimensions(double w, double h) {
     if(w > 0) {
         width = w;
     } else {
@@ -34,6 +34,6 @@ void shape::setDimensions(double w, double h) {
     }
 }
 
-double shape::getArea() {
+double Shape::getArea() {
     return width * height;
 }
